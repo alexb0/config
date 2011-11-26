@@ -1,0 +1,3 @@
+term rxvt
+defutf8 on
+hardstatus alwayslastline "%{Ck}%H %{-b}%{wk}%?%-w%?%{Gk}%n %t%{-}%?%+w%?%=%{yk}%c %l"
