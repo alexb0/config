@@ -1,0 +1,19 @@
+[color]
+	diff = auto
+[alias]
+	lg = log --date=local -p
+	df = diff -p --stat
+	co = checkout
+	ci = commit -s
+	br = branch
+	tree = log --oneline --decorate --graph
+	desc =  describe
+	next = !git remote update next && git checkout -b `git tag -l next-*|tail -n 1` next/master
+	rm-next = !git branch|grep 'next-'|xargs git branch -D
+	next-rm = !git branch|grep 'next-'|xargs git branch -D
+	patch = format-patch 
+	patch-next = format-patch --subject-prefix='PATCH next'
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
